@@ -1,52 +1,10 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="utf-8">
-    <title>my portfolio</title>
-    <meta name="description"
-        content="">
-    <link rel="icon" type="image/svg+xml" href="/images/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link href="css/style.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b8a7fea4d4.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    
-    <div id="top" class="l-container">
-        <header class="p-header u-margin-lr">
-            <div class="p-header__wrapper">
-                <h1 class="c-logo">
-                    <img class="js-color" src="/img/logo-name.svg" alt="">
-                    <img class="js-color" src="/img/logo-name-white.svg" alt="">
-                </h1>
-                <nav class="p-gnav js-gnav">
-                    <button class="p-hamburger js-hamburger js-color">
-                        <span>menuボタン</span>
-                    </button>
-                    <ul class="list js-color">
-                        <li><a href="index.html#top">TOP</a></li>
-                        <li><a href="index.html#about">ABOUT</a></li>
-                        <li><a href="index.html#skills">SKILLS</a></li>
-                        <li><a href="index.html#works">WORKS</a></li>
-                        <li><a href="index.html#contact">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!-- Slider main container -->
+<?php get_header(); ?>
         <main>
             <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img class="swiper-img--sp" src="/img/swiper-tagara--sp.png" alt="">
-                        <img class="swiper-img--pc" src="/img/swiper-tagara1--pc.png" alt="">
+                        <img class="swiper-img--sp" src="<?php echo get_template_directory_uri(); ?>/img/swiper-tagara--sp.png" alt="">
+                        <img class="swiper-img--pc" src="<?php echo get_template_directory_uri(); ?>/img/swiper-tagara1--pc.png" alt="">
                         <article>
                             <h2>Tagara Ballet Circle</h2>
                             <ul>
@@ -66,8 +24,8 @@
                         </article>
                     </div>
                     <div class="swiper-slide">
-                        <img class="swiper-img--sp" src="/img/swiper-tagara--2.png" alt="">
-                        <img class="swiper-img--pc" src="/img/swiper-tagara2--pc.png" alt="">
+                        <img class="swiper-img--sp" src="<?php echo get_template_directory_uri(); ?>/img/swiper-tagara--2.png" alt="">
+                        <img class="swiper-img--pc" src="<?php echo get_template_directory_uri(); ?>/img/swiper-tagara2--pc.png" alt="">
                         <article>
                             <h2>Tagara Ballet Circle</h2>
                             <ul>
@@ -84,8 +42,8 @@
                         </article>
                     </div>
                     <div class="swiper-slide">
-                        <img class="swiper-img--sp" src="/img/swiper-tagara3--sp.png" alt="">
-                        <img class="swiper-img--pc" src="/img/swiper-tagara3--pc.png" alt="">
+                        <img class="swiper-img--sp" src="<?php echo get_template_directory_uri(); ?>/img/swiper-tagara3--sp.png" alt="">
+                        <img class="swiper-img--pc" src="<?php echo get_template_directory_uri(); ?>/img/swiper-tagara3--pc.png" alt="">
                         <article>
                             <h2>Tagara Ballet Circle</h2>
                             <ul>
@@ -102,8 +60,8 @@
                         </article>
                     </div>
                     <div class="swiper-slide">
-                        <img class="swiper-img--sp" src="/img/swiper-tagara4--sp.png" alt="">
-                        <img class="swiper-img--pc" src="/img/swiper-tagara4--pc.png" alt="">
+                        <img class="swiper-img--sp" src="<?php echo get_template_directory_uri(); ?>/img/swiper-tagara4--sp.png" alt="">
+                        <img class="swiper-img--pc" src="<?php echo get_template_directory_uri(); ?>/img/swiper-tagara4--pc.png" alt="">
                         <article>
                             <h2>Tagara Ballet Circle</h2>
                             <ul>
@@ -120,8 +78,8 @@
                         </article>
                     </div>
                     <div class="swiper-slide">
-                        <img class="swiper-img--sp" src="/img/swiper-tagara5--sp.png" alt="">
-                        <img class="swiper-img--pc" src="/img/swiper-tagara5--pc.png" alt="">
+                        <img class="swiper-img--sp" src="<?php echo get_template_directory_uri(); ?>/img/swiper-tagara5--sp.png" alt="">
+                        <img class="swiper-img--pc" src="<?php echo get_template_directory_uri(); ?>/img/swiper-tagara5--pc.png" alt="">
                         <article>
                             <h2>Tagara Ballet Circle</h2>
                             <ul>
@@ -141,17 +99,4 @@
                 <div class="swiper-pagination"></div>
             </div>
         </main>
-        
-    </div>
-
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="js/bubbly-bg.js"></script>
-    <script src="js/bubbly.js"></script>
-    <script type='text/javascript' src='./js/midnight.jquery.min.js?ver=5.4.1'></script>
-    <script src="js/style.js"></script>
-</body>
-
-</html>
+<?php get_footer(); ?>

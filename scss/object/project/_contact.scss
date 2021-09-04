@@ -3,7 +3,8 @@
     // margin-bottom: 50px;
     // height: 100vh;
     text-align: center;
-    &__input {
+
+    .wpcf7-form {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -23,10 +24,16 @@
                 
             }
         }
-        &__message{
-            height: 200px;
+        p:nth-child(5) {
+            border: 0px solid white;
+            padding: 0;
+            background-color: transparent;
         }
-        p:last-child {
+        .wpcf7-textarea{
+            height: 200px;
+            width: 100%;
+        }
+        .wpcf7-submit {
             color: white;
             background: rgb(165, 165, 165,);
             &:hover {

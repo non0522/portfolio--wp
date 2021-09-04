@@ -783,12 +783,24 @@ body {
   }
 }
 
+.p-works a .p-works__hide {
+  color: white;
+  font-size: 32px;
+  white-space: nowrap;
+  position: absolute;
+  top: 40%;
+  left: 100%;
+  -webkit-transition: all 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+  transition: all 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+  pointer-events: none;
+}
+
 .p-works__imgframe {
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(/img/frame-sp.png);
+  background-image: url("../img/frame-sp.png");
   margin-bottom: 20px;
 }
 
@@ -798,7 +810,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-image: url(/img/frame-pc.png);
+    background-image: url("../img/frame-pc.png");
   }
 }
 
@@ -837,19 +849,13 @@ body {
   }
 }
 
-.p-works__hide {
-  color: white;
-  font-size: 32px;
-  white-space: nowrap;
-  position: absolute;
-  top: 40%;
-  left: 100%;
-  -webkit-transition: all 0.35s cubic-bezier(0.65, 0, 0.35, 1);
-  transition: all 0.35s cubic-bezier(0.65, 0, 0.35, 1);
-  pointer-events: none;
+.p-works p {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .p-works h4 {
+  font-size: 24px;
   padding-bottom: 50px;
 }
 
@@ -973,7 +979,7 @@ body {
   text-align: center;
 }
 
-.p-contact__input {
+.p-contact .wpcf7-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -988,7 +994,7 @@ body {
   margin: 0 auto;
 }
 
-.p-contact__input p {
+.p-contact .wpcf7-form p {
   width: 100%;
   max-width: 500px;
   padding-left: 20px;
@@ -998,20 +1004,27 @@ body {
   border: rgba(165, 165, 165, 0.5) 1px solid;
 }
 
-.p-contact__input p input {
+.p-contact .wpcf7-form p input {
   width: 100%;
 }
 
-.p-contact__input__message {
-  height: 200px;
+.p-contact .wpcf7-form p:nth-child(5) {
+  border: 0px solid white;
+  padding: 0;
+  background-color: transparent;
 }
 
-.p-contact__input p:last-child {
+.p-contact .wpcf7-form .wpcf7-textarea {
+  height: 200px;
+  width: 100%;
+}
+
+.p-contact .wpcf7-form .wpcf7-submit {
   color: white;
   background: #a5a5a5;
 }
 
-.p-contact__input p:last-child:hover {
+.p-contact .wpcf7-form .wpcf7-submit:hover {
   background-color: #06A1A6;
   opacity: .7;
   -webkit-transition: .8s;
